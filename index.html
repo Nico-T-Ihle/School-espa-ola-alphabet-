@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid mit 24 Kacheln und Audio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Para la escuela secundaria técnica</h2>
+    <p>Ist nur ein prototype für feedback hit me up (oder bugs :<)</p>
+
+    <div class="grid-container">
+        <!-- 24 Kacheln, die zu Buttons gemacht werden -->
+        <button class="grid-item-1">1
+            <p>Aa</p>
+        </button>
+        <button class="grid-item-2">2
+            <p>Bb</p>
+        </button>
+        <button class="grid-item-3">3
+            <p>Cc</p>
+        </button>
+        <button class="grid-item-4">4
+            <p>Dd</p>
+        </button>
+        <button class="grid-item-5">5
+            <p>Ee</p>
+        </button>
+        <button class="grid-item-6">6
+            <p>Ff</p>
+        </button>
+        <button class="grid-item-7">7
+            <p>Gg</p>
+        </button>
+        <button class="grid-item-8">8
+            <p>Hh</p>
+        </button>
+        <button class="grid-item-9">9
+            <p>Ii</p>
+        </button>
+        <button class="grid-item-10">10
+            <p>Jj</p>
+        </button>
+        <button class="grid-item-11">11
+            <p>Kk</p>
+        </button>
+        <button class="grid-item-12">12
+            <p>Ll</p>
+        </button>
+        <button class="grid-item-13">13
+            <p>Mm</p>
+        </button>
+        <button class="grid-item-14">14
+            <p>Nn</p>
+        </button>
+        <button class="grid-item-15">15
+            <p>Oo</p>
+        </button>
+        <button class="grid-item-16">16
+            <p>Pp</p>
+        </button>
+        <button class="grid-item-17">17
+            <p>Qq</p>
+        </button>
+        <button class="grid-item-18">18
+            <p>Rr</p>
+        </button>
+        <button class="grid-item-19">19
+            <p>Ss</p>
+        </button>
+        <button class="grid-item-20">20
+            <p>Tt</p>
+        </button>
+        <button class="grid-item-21">21
+            <p>Uu</p>
+        </button>
+        <button class="grid-item-22">22
+            <p>Vv</p>
+        </button>
+        <button class="grid-item-23">23
+            <p>Ww</p>
+        </button>
+        <button class="grid-item-24">24
+            <p>Xx</p>
+        </button>
+    </div>
+
+    <!-- Audio-Elemente -->
+    <audio id="audio-player-1" src="A-Spanisch.aifc"></audio>
+    <audio id="audio-player-2" src="B-Spanisch.aifc"></audio>
+    <audio id="audio-player-3" src="C-Spanisch.aifc"></audio>
+    <audio id="audio-player-4" src="d-spanisch.aifc"></audio>
+    <audio id="audio-player-5" src="e-Spanisch.aifc"></audio>
+    <audio id="audio-player-6" src="f-spanisch.aifc"></audio>
+    <audio id="audio-player-7" src="g-Spanisch.aifc"></audio>
+    <audio id="audio-player-8" src="h-spanisch.aifc"></audio>
+    <audio id="audio-player-9" src="i-spanisch.aifc"></audio>
+    <audio id="audio-player-10" src="j-spa.aifc"></audio>
+    <audio id="audio-player-11" src="k-spa.aifc"></audio>
+    <audio id="audio-player-12" src="l-yo.aifc"></audio>
+    <audio id="audio-player-13" src="m-sp.aifc"></audio>
+    <audio id="audio-player-14" src="n-sp.aifc"></audio>
+    <audio id="audio-player-15" src="o-sp.aifc"></audio>
+    <audio id="audio-player-16" src="p-sp.aifc"></audio>
+    <audio id="audio-player-17" src="q-sp.aifc"></audio>
+    <audio id="audio-player-18" src="r-sp.aifc"></audio>
+    <audio id="audio-player-19" src="s-sp.aifc"></audio>
+    <audio id="audio-player-20" src="t-sp.aifc"></audio>
+    <audio id="audio-player-21" src="u-sp.aifc"></audio>
+    <audio id="audio-player-22" src="v-sp.aifc"></audio>
+    <audio id="audio-player-23" src="w-sp.aifc"></audio>
+    <audio id="audio-player-24" src="x-sp.aifc"></audio>
+
+    <script>
+        // Liste der Audio-Elemente
+        const audioPlayers = [
+            document.getElementById('audio-player-1'),
+            document.getElementById('audio-player-2'),
+            document.getElementById('audio-player-3'),
+            document.getElementById('audio-player-4'),
+            document.getElementById('audio-player-5'),
+            document.getElementById('audio-player-6'),
+            document.getElementById('audio-player-7'),
+            document.getElementById('audio-player-8'),
+            document.getElementById('audio-player-9'),
+            document.getElementById('audio-player-10'),
+            document.getElementById('audio-player-11'),
+            document.getElementById('audio-player-12'),
+            document.getElementById('audio-player-13'),
+            document.getElementById('audio-player-14'),
+            document.getElementById('audio-player-15'),
+            document.getElementById('audio-player-16'),
+            document.getElementById('audio-player-17'),
+            document.getElementById('audio-player-18'),
+            document.getElementById('audio-player-19'),
+            document.getElementById('audio-player-20'),
+            document.getElementById('audio-player-21'),
+            document.getElementById('audio-player-22'),
+            document.getElementById('audio-player-23'),
+            document.getElementById('audio-player-24')
+        ];
+
+        // Funktion, die beim Klick den Button-Wert in der Konsole ausgibt und das Audio abspielt
+        document.querySelectorAll('button').forEach((button, index) => {
+            button.addEventListener('click', function() {
+                console.log(this.textContent); // Gibt die Nummer des Buttons aus
+
+                // Überprüfe, ob die Button-Nummer existiert
+                if (index >= 0 && index < audioPlayers.length) {
+                    // Stoppe alle anderen Audios
+                    audioPlayers.forEach(player => player.pause());
+
+                    // Spiele das entsprechende Audio ab
+                    audioPlayers[index].currentTime = 0; // Setze die Audio-Wiedergabe auf den Anfang
+                    audioPlayers[index].play();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
