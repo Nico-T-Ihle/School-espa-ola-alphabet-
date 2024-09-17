@@ -14,10 +14,16 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             background-color: #f0f0f0;
+        }
+
+        div.info-container {
+            margin-bottom: 20px; /* Abstand zum Grid-Container */
+            text-align: center;
         }
 
         .grid-container {
@@ -45,8 +51,10 @@
 </head>
 <body>
 
-    <h2>Para la escuela secundaria técnica</h2>
-    <p>Ist nur ein prototype für feedback hit me up (oder bugs :<)</p>
+    <div class="info-container">
+        <h2>Para la escuela secundaria técnica</h2>
+        <p>Ist nur ein prototype für feedback hit me up (oder bugs :<)</p>
+    </div>
 
     <div class="grid-container">
         <!-- 24 Kacheln, die zu Buttons gemacht werden -->
